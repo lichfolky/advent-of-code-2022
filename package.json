@@ -1,11 +1,30 @@
 {
   "name": "advent-of-code-2022",
   "version": "1.0.0",
-  "description": "my advent of code 2022 solutions",
+  "description": "my solutions of the 2022 advent of code",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node index.js"
   },
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lichfolky/advent-of-code-2022.git"
+  },
+  "keywords": [
+    "solutions",
+    "\"advent",
+    "of",
+    "code\"",
+    "2022"
+  ],
+  "author": "lichfolky",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lichfolky/advent-of-code-2022/issues"
+  },
+  "homepage": "https://github.com/lichfolky/advent-of-code-2022#readme",
+  "dependencies": {
+    "browser-fs-access": "^0.31.1"
+  }
 }
