@@ -1,7 +1,7 @@
 {
   "name": "advent-of-code-2022",
   "version": "1.0.0",
-  "description": "my solutions of the 2022 advent of code",
+  "description": "My solutions of the 2022 advent of code",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -13,9 +13,7 @@
   },
   "keywords": [
     "solutions",
-    "\"advent",
-    "of",
-    "code\"",
+    "advent of code",
     "2022"
   ],
   "author": "lichfolky",
@@ -24,7 +22,5 @@
     "url": "https://github.com/lichfolky/advent-of-code-2022/issues"
   },
   "homepage": "https://github.com/lichfolky/advent-of-code-2022#readme",
-  "dependencies": {
-    "browser-fs-access": "^0.31.1"
-  }
+  "dependencies": {}
 }
