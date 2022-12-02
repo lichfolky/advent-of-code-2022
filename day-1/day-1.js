@@ -1,6 +1,5 @@
 import fs from 'fs';
 
-// https://web.dev/read-files/
 export function es1() {
     console.log("--- Day 1: Calorie Counting ---");
     fs.readFile('./day-1/input.txt', 'utf8', (err, data) => {

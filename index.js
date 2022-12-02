@@ -1,6 +1,7 @@
 import * as readline from 'node:readline/promises';
 import { stdin as input, stdout as output } from 'node:process';
 import { es1 } from "./day-1/day-1.js";
+import { es2 } from "./day-2/day-2.js";
 
 const rl = readline.createInterface({ input, output });
 
@@ -16,6 +17,9 @@ if (!myArgs[0]) {
 
 if (answer == 1) {
     es1();
+}
+if (answer == 2) {
+    es2();
 }
 
 rl.close();
