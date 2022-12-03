@@ -2,11 +2,11 @@ import * as readline from 'node:readline/promises';
 import { stdin as input, stdout as output } from 'node:process';
 import { es1 } from "./day-1/day-1.js";
 import { es2 } from "./day-2/day-2.js";
+import { es3 } from "./day-3/day-3.js";
 
 const rl = readline.createInterface({ input, output });
 
 const myArgs = process.argv.slice(2);
-console.log('myArgs: ', myArgs);
 
 let answer;
 if (!myArgs[0]) {
@@ -15,11 +15,18 @@ if (!myArgs[0]) {
     answer = +myArgs[0];
 }
 
-if (answer == 1) {
-    es1();
-}
-if (answer == 2) {
-    es2();
+switch (answer) {
+    case 1:
+        es1();
+        break;
+    case 2:
+        es2();
+        break;
+    case 3:
+        es3();
+        break;
+    default:
+        console.log("Wrong num");
 }
 
 rl.close();

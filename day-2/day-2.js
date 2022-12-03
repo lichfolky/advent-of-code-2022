@@ -28,14 +28,14 @@ export function es2() {
         let totalScore = data.split("\n").map(couple =>
             score(col1[couple[0]], col2[couple[2]])
         ).reduce((sum, cal) => sum + Number(cal), 0);
-        console.log("RESULT: " + totalScore);
-        console.log(`------------------------------`);
+        console.log("\n\tRESULT: " + totalScore);
+        console.log(`\n------------------------------`);
 
         totalScore = data.split("\n").map(couple =>
             score(col1[couple[0]], realStrategy(col1[couple[0]], couple[2]))
         ).reduce((sum, cal) => sum + Number(cal), 0);
-        console.log("RESULT: " + totalScore);
-        console.log(`------------------------------`);
+        console.log("\n\tRESULT: " + totalScore);
+        console.log(`\n------------------------------`);
     });
 }
 

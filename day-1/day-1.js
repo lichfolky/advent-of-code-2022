@@ -8,12 +8,12 @@ export function es1() {
             return;
         }
 
-        console.log("RESULT: " +
+        console.log("\n\tRESULT: " +
             Math.max(...data.split("\n\n").map((cals) =>
                 cals.split("\n")
                     .reduce((sum, cal) => sum + Number(cal), 0))));
 
-        console.log(`------------------------------`);
+        console.log(`\n------------------------------`);
 
         let calsTotals = data
             .split("\n\n")
@@ -24,9 +24,9 @@ export function es1() {
             .sort((a, b) => b - a);
 
         let top3Cals = calsTotals[0] + calsTotals[1] + calsTotals[2];
-        console.log("RESULT: " + calsTotals[0] + " + " + calsTotals[1] + " + " + calsTotals[2] + " = " + top3Cals);
+        console.log("\n\tRESULT: " + calsTotals[0] + " + " + calsTotals[1] + " + " + calsTotals[2] + " = " + top3Cals);
 
-        console.log(`------------------------------`);
+        console.log(`\n------------------------------`);
 
     });
 }
