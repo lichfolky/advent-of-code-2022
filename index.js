@@ -3,6 +3,7 @@ import { stdin as input, stdout as output } from 'node:process';
 import { es1 } from "./day-1/day-1.js";
 import { es2 } from "./day-2/day-2.js";
 import { es3 } from "./day-3/day-3.js";
+import { es4 } from "./day-4/day-4.js";
 
 const rl = readline.createInterface({ input, output });
 
@@ -24,6 +25,9 @@ switch (answer) {
         break;
     case 3:
         es3();
+        break;
+    case 4:
+        es4();
         break;
     default:
         console.log("Wrong num");
