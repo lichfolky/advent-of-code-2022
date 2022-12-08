@@ -7,7 +7,7 @@ import { es4 } from "./day-4/day-4.js";
 import { es5 } from "./day-5/day-5.js";
 import { es6 } from "./day-6/day-6.js";
 import { es7 } from "./day-7/day-7.js";
-// import { es8 } from "./day-8/day-8.js";
+import { es8 } from "./day-8/day-8.js";
 // import { es9 } from "./day-9/day-9.js";
 // import { es10 } from "./day-10/day-10.js";
 // import { es11 } from "./day-11/day-11.js";

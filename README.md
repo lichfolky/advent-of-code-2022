@@ -19,10 +19,12 @@ Run a solution:
 npm run test 1
 ```
 
-### 1 Magical energy
+### 1 Magical energy  
+
 https://adventofcode.com/2018/day/25
 
-### 4 significant experience dealing with signal-based systems:
+### 4 significant experience dealing with signal-based systems:  
+
 https://adventofcode.com/2016/day/6
 https://adventofcode.com/2016/day/25
 https://adventofcode.com/2019/day/7
