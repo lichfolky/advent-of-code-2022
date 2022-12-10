@@ -1,5 +1,6 @@
 import * as readline from 'node:readline/promises';
 import { stdin as input, stdout as output } from 'node:process';
+import fs from 'fs';
 import { es1 } from "./day-1/day-1.js";
 import { es2 } from "./day-2/day-2.js";
 import { es3 } from "./day-3/day-3.js";
@@ -8,7 +9,7 @@ import { es5 } from "./day-5/day-5.js";
 import { es6 } from "./day-6/day-6.js";
 import { es7 } from "./day-7/day-7.js";
 import { es8 } from "./day-8/day-8.js";
-// import { es9 } from "./day-9/day-9.js";
+import { es9 } from "./day-9/day-9.js";
 // import { es10 } from "./day-10/day-10.js";
 // import { es11 } from "./day-11/day-11.js";
 // import { es12 } from "./day-12/day-12.js";
@@ -36,35 +37,41 @@ if (!myArgs[0]) {
 } else {
     answer = +myArgs[0];
 }
-
-switch (answer) {
-    case 1: es1(); break;
-    case 2: es2(); break;
-    case 3: es3(); break;
-    case 4: es4(); break;
-    case 5: es5(); break;
-    case 6: es6(); break;
-    case 7: es7(); break;
-    case 8: es8(); break;
-    case 9: es9(); break;
-    case 10: es10(); break;
-    case 11: es11(); break;
-    case 12: es12(); break;
-    case 13: es13(); break;
-    case 14: es14(); break;
-    case 15: es15(); break;
-    case 16: es16(); break;
-    case 17: es17(); break;
-    case 18: es18(); break;
-    case 19: es19(); break;
-    case 20: es20(); break;
-    case 21: es21(); break;
-    case 22: es22(); break;
-    case 23: es23(); break;
-    case 24: es24(); break;
-    case 25: es25(); break;
-    default:
-        console.log("Wrong num");
-}
-
 rl.close();
+
+fs.readFile('./welcome-text.txt', 'utf8', (err, text) => {
+    if (err) {
+        console.error(err);
+        return;
+    }
+    //console.log(text);
+    switch (answer) {
+        case 1: es1(); break;
+        case 2: es2(); break;
+        case 3: es3(); break;
+        case 4: es4(); break;
+        case 5: es5(); break;
+        case 6: es6(); break;
+        case 7: es7(); break;
+        case 8: es8(); break;
+        case 9: es9(); break;
+        case 10: es10(); break;
+        case 11: es11(); break;
+        case 12: es12(); break;
+        case 13: es13(); break;
+        case 14: es14(); break;
+        case 15: es15(); break;
+        case 16: es16(); break;
+        case 17: es17(); break;
+        case 18: es18(); break;
+        case 19: es19(); break;
+        case 20: es20(); break;
+        case 21: es21(); break;
+        case 22: es22(); break;
+        case 23: es23(); break;
+        case 24: es24(); break;
+        case 25: es25(); break;
+        default:
+            console.log("Wrong num");
+    }
+});
